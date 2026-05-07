@@ -1,13 +1,12 @@
 {
-  "itemGroup.herbalspellcraft": "Example Mod Tab",
-  "block.herbalspellcraft.example_block": "Example Block",
-  "item.herbalspellcraft.example_item": "Example Item",
+  "item.herbalspellcraft.garnet": "Garnet",
+  "item.herbalspellcraft.raw_garnet": "Raw Garnet",
 
-  "herbalspellcraft.configuration.title": "Herbal SpellCraft Configs",
-  "herbalspellcraft.configuration.section.herbalspellcraft.common.toml": "Herbal SpellCraft Configs",
-  "herbalspellcraft.configuration.section.herbalspellcraft.common.toml.title": "Herbal SpellCraft Configs",
-  "herbalspellcraft.configuration.items": "Item List",
-  "herbalspellcraft.configuration.logDirtBlock": "Log Dirt Block",
-  "herbalspellcraft.configuration.magicNumberIntroduction": "Magic Number Text",
-  "herbalspellcraft.configuration.magicNumber": "Magic Number"
+
+  "block.herbalspellcraft.garnet_block": "Block of Garnet",
+  "block.herbalspellcraft.raw_garnet_block": "Block of Raw Garnet",
+
+
+  "creativetab.herbalspellcraft.herbalspellcraft_items": "HerbalSpellCraft"
+
 }

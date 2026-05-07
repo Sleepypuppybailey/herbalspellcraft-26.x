@@ -1,5 +1,8 @@
 package net.sleepypuppybailey.herbalspellcraft;
 
+import net.sleepypuppybailey.herbalspellcraft.block.ModBlocks;
+import net.sleepypuppybailey.herbalspellcraft.creativemodetab.ModCreativeModeTabs;
+import net.sleepypuppybailey.herbalspellcraft.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -28,11 +31,14 @@ public class HerbalSpellCraft {
     public HerbalSpellCraft(IEventBus modEventBus, ModContainer modContainer) {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
 
         NeoForge.EVENT_BUS.register(this);
-
         modEventBus.addListener(this::addCreative);
-
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
@@ -43,7 +49,9 @@ public class HerbalSpellCraft {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.GARNET);
+            event.accept(ModItems.RAW_GARNET);
 
         }
     }
