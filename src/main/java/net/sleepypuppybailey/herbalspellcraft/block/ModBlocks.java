@@ -19,7 +19,6 @@ public class ModBlocks {
     public static final DeferredBlock<Block> GARNET_BLOCK = registerBlock("garnet_block",
             properties -> new Block(properties.strength(4f)
                     .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
-
     public static final DeferredBlock<Block> RAW_GARNET_BLOCK = registerBlock("raw_garnet_block",
             properties -> new Block(properties.strength(4f)
                     .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
