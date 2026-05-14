@@ -46,8 +46,24 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern("AAA")
                 .define('A', ModItems.GARNET.get())
                 .unlockedBy(getHasName(ModItems.GARNET.get()), has(ModItems.GARNET))
+                .group("garnet")
+                .save(output);
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_GARNET_BLOCK.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.RAW_GARNET.get())
+                .unlockedBy(getHasName(ModItems.RAW_GARNET.get()), has(ModItems.RAW_GARNET))
                 .group("azurite")
                 .save(output);
+
+
+
+
+
+
+
 
         shapeless(RecipeCategory.MISC, ModItems.GARNET.get(), 9)
                 .requires(ModBlocks.GARNET_BLOCK)

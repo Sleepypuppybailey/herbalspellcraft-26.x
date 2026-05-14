@@ -12,6 +12,7 @@ import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.sleepypuppybailey.herbalspellcraft.datagen.ModBlockLootTableprovider;
 import net.sleepypuppybailey.herbalspellcraft.datagen.ModBlockTagsProvider;
 import net.sleepypuppybailey.herbalspellcraft.datagen.ModModelProvider;
+import net.sleepypuppybailey.herbalspellcraft.datagen.ModRecipeProvider;
 
 import java.util.Collections;
 import java.util.List;
@@ -27,6 +28,10 @@ public class HerbalSpellCraftDataGen {
         generator.addProvider(true, new ModModelProvider(packOutput));
         generator.addProvider(true, new ModBlockTagsProvider(packOutput, lookupProvider));
         generator.addProvider(true, new LootTableProvider(packOutput, Collections.emptySet(),
-                List.of(new LootTableProvider.SubProviderEntry(ModBlockLootTableprovider::new, LootContextParamSets.BLOCK)), lookupProvider));;
+                List.of(new LootTableProvider.SubProviderEntry(ModBlockLootTableprovider::new, LootContextParamSets.BLOCK)), lookupProvider));
+
+
+
+        generator.addProvider(true, new ModRecipeProvider.Runner(packOutput, lookupProvider));
         }
 }
