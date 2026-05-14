@@ -25,6 +25,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.GARNET_BLOCK);
                         output.accept(ModBlocks.RAW_GARNET_BLOCK);
 
+                        output.accept(ModBlocks.GARNET_ORE);
+                        output.accept(ModBlocks.GARNET_DEEPSLATE_ORE);
+
                     }).build());
 
 

@@ -1,7 +1,9 @@
 package net.sleepypuppybailey.herbalspellcraft.block;
 
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -22,6 +24,16 @@ public class ModBlocks {
     public static final DeferredBlock<Block> RAW_GARNET_BLOCK = registerBlock("raw_garnet_block",
             properties -> new Block(properties.strength(4f)
                     .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+
+    public static final DeferredBlock<Block> GARNET_ORE = registerBlock("garnet_ore",
+            properties -> new DropExperienceBlock(UniformInt.of(2, 4), properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> GARNET_DEEPSLATE_ORE= registerBlock("garnet_deepslate_ore",
+            properties -> new DropExperienceBlock(UniformInt.of(3, 5), properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+
 
 
 
