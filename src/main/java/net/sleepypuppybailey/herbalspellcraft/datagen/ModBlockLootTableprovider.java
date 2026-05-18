@@ -21,9 +21,22 @@ public class ModBlockLootTableprovider extends BlockLootSubProvider {
     protected void generate() {
         dropSelf(ModBlocks.GARNET_BLOCK.get());
         dropSelf(ModBlocks.RAW_GARNET_BLOCK.get());
+        dropSelf(ModBlocks.AQUAMARINE_BLOCK.get());
+        dropSelf(ModBlocks.RAW_AQUAMARINE_BLOCK.get());
+        dropSelf(ModBlocks.MOSSAVENTURINE_BLOCK.get());
+        dropSelf(ModBlocks.RAW_MOSSAVENTURINE_BLOCK.get());
+        dropSelf(ModBlocks.RAW_TOPAZ_BLOCK.get());
+        dropSelf(ModBlocks.TOPAZ_BLOCK.get());
 
         add(ModBlocks.GARNET_ORE.get(), createOreDrop(ModBlocks.GARNET_ORE.get(), ModItems.RAW_GARNET.get() ));
         add(ModBlocks.GARNET_DEEPSLATE_ORE.get(), createOreDrop(ModBlocks.GARNET_DEEPSLATE_ORE.get(), ModItems.RAW_GARNET.get() ));
+        add(ModBlocks.AQUAMARINE_ORE.get(), createOreDrop(ModBlocks.AQUAMARINE_ORE.get(), ModItems.RAW_AQUAMARINE.get() ));
+        add(ModBlocks.AQUAMARINE_DEEPSLATE_ORE.get(), createOreDrop(ModBlocks.AQUAMARINE_DEEPSLATE_ORE.get(), ModItems.RAW_AQUAMARINE.get() ));
+        add(ModBlocks.MOSSAVENTURINE_ORE.get(), createOreDrop(ModBlocks.MOSSAVENTURINE_ORE.get(), ModItems.RAW_MOSSAVENTURINE.get() ));
+        add(ModBlocks.MOSSAVENTURINE_DEEPSLATE_ORE.get(), createOreDrop(ModBlocks.MOSSAVENTURINE_DEEPSLATE_ORE.get(), ModItems.RAW_MOSSAVENTURINE.get() ));
+        add(ModBlocks.TOPAZ_ORE.get(), createOreDrop(ModBlocks.TOPAZ_ORE.get(), ModItems.RAW_TOPAZ.get() ));
+        add(ModBlocks.TOPAZ_DEEPSLATE_ORE.get(), createOreDrop(ModBlocks.TOPAZ_DEEPSLATE_ORE.get(), ModItems.RAW_TOPAZ.get() ));
+
     }
 
     @Override

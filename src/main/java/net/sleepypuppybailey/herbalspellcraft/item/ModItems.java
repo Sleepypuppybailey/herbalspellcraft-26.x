@@ -11,6 +11,12 @@ public class ModItems {
 
         public static final DeferredItem<Item> GARNET = ITEMS.registerSimpleItem("garnet");
         public static final DeferredItem<Item> RAW_GARNET = ITEMS.registerSimpleItem("raw_garnet");
+        public static final DeferredItem<Item> AQUAMARINE = ITEMS.registerSimpleItem("aquamarine");
+        public static final DeferredItem<Item> RAW_AQUAMARINE = ITEMS.registerSimpleItem("raw_aquamarine");
+        public static final DeferredItem<Item> MOSSAVENTURINE = ITEMS.registerSimpleItem("mossaventurine");
+        public static final DeferredItem<Item> RAW_MOSSAVENTURINE = ITEMS.registerSimpleItem("raw_mossaventurine");
+        public static final DeferredItem<Item> RAW_TOPAZ = ITEMS.registerSimpleItem("raw_topaz");
+        public static final DeferredItem<Item> TOPAZ = ITEMS.registerSimpleItem("topaz");
 
 
 

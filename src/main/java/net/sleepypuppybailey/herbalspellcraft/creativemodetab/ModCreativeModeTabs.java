@@ -20,13 +20,35 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.GARNET.get()))
                     .title(Component.translatable("creativetab.herbalspellcraft.herbalspellcraft_items"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        //Items
                         output.accept(ModItems.RAW_GARNET);
                         output.accept(ModItems.GARNET);
+                        output.accept(ModItems.RAW_AQUAMARINE);
+                        output.accept(ModItems.AQUAMARINE);
+                        output.accept(ModItems.MOSSAVENTURINE);
+                        output.accept(ModItems.RAW_MOSSAVENTURINE);
+                        output.accept(ModItems.RAW_TOPAZ);
+                        output.accept(ModItems.TOPAZ);
+
+                        //Blocks
                         output.accept(ModBlocks.GARNET_BLOCK);
                         output.accept(ModBlocks.RAW_GARNET_BLOCK);
+                        output.accept(ModBlocks.RAW_AQUAMARINE_BLOCK);
+                        output.accept(ModBlocks.AQUAMARINE_BLOCK);
+                        output.accept(ModBlocks.MOSSAVENTURINE_BLOCK);
+                        output.accept(ModBlocks.RAW_MOSSAVENTURINE_BLOCK);
+                        output.accept(ModBlocks.TOPAZ_BLOCK);
+                        output.accept(ModBlocks.RAW_TOPAZ_BLOCK);
 
+                        //Ores
                         output.accept(ModBlocks.GARNET_ORE);
                         output.accept(ModBlocks.GARNET_DEEPSLATE_ORE);
+                        output.accept(ModBlocks.AQUAMARINE_ORE);
+                        output.accept(ModBlocks.AQUAMARINE_DEEPSLATE_ORE);
+                        output.accept(ModBlocks.MOSSAVENTURINE_ORE);
+                        output.accept(ModBlocks.MOSSAVENTURINE_DEEPSLATE_ORE);
+                        output.accept(ModBlocks.TOPAZ_ORE);
+                        output.accept(ModBlocks.TOPAZ_DEEPSLATE_ORE);
 
                     }).build());
 

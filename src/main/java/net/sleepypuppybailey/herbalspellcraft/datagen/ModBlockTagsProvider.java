@@ -20,12 +20,35 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.GARNET_BLOCK.get())
                 .add(ModBlocks.RAW_GARNET_BLOCK.get())
                 .add(ModBlocks.GARNET_ORE.get())
-                .add(ModBlocks.GARNET_DEEPSLATE_ORE.get());
+                .add(ModBlocks.GARNET_DEEPSLATE_ORE.get())
+                .add(ModBlocks.AQUAMARINE_BLOCK.get())
+                .add(ModBlocks.RAW_AQUAMARINE_BLOCK.get())
+                .add(ModBlocks.AQUAMARINE_ORE.get())
+                .add(ModBlocks.AQUAMARINE_DEEPSLATE_ORE.get())
+                .add(ModBlocks.MOSSAVENTURINE_BLOCK.get())
+                .add(ModBlocks.RAW_MOSSAVENTURINE_BLOCK.get())
+                .add(ModBlocks.MOSSAVENTURINE_ORE.get())
+                .add(ModBlocks.MOSSAVENTURINE_DEEPSLATE_ORE.get())
+                .add(ModBlocks.TOPAZ_ORE.get())
+                .add(ModBlocks.TOPAZ_DEEPSLATE_ORE.get());
+
+
+
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.GARNET_BLOCK.get())
                 .add(ModBlocks.RAW_GARNET_BLOCK.get())
                 .add(ModBlocks.GARNET_ORE.get())
-                .add(ModBlocks.GARNET_DEEPSLATE_ORE.get());
+                .add(ModBlocks.GARNET_DEEPSLATE_ORE.get())
+                .add(ModBlocks.AQUAMARINE_BLOCK.get())
+                .add(ModBlocks.RAW_AQUAMARINE_BLOCK.get())
+                .add(ModBlocks.AQUAMARINE_ORE.get())
+                .add(ModBlocks.AQUAMARINE_DEEPSLATE_ORE.get())
+                .add(ModBlocks.MOSSAVENTURINE_BLOCK.get())
+                .add(ModBlocks.RAW_MOSSAVENTURINE_BLOCK.get())
+                .add(ModBlocks.MOSSAVENTURINE_ORE.get())
+                .add(ModBlocks.MOSSAVENTURINE_DEEPSLATE_ORE.get())
+                .add(ModBlocks.TOPAZ_ORE.get())
+                .add(ModBlocks.TOPAZ_DEEPSLATE_ORE.get());
     }
 }

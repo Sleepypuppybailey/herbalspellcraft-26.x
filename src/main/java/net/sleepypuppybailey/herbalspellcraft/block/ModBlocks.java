@@ -17,19 +17,63 @@ import java.util.function.Function;
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(HerbalSpellCraft.MOD_ID);
-
+    //Block
     public static final DeferredBlock<Block> GARNET_BLOCK = registerBlock("garnet_block",
             properties -> new Block(properties.strength(4f)
                     .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
     public static final DeferredBlock<Block> RAW_GARNET_BLOCK = registerBlock("raw_garnet_block",
             properties -> new Block(properties.strength(4f)
                     .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final DeferredBlock<Block> AQUAMARINE_BLOCK = registerBlock("aquamarine_block",
+            properties -> new Block(properties.strength(4f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+public static final DeferredBlock<Block> RAW_AQUAMARINE_BLOCK = registerBlock("raw_aquamarine_block",
+            properties -> new Block(properties.strength(4f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final DeferredBlock<Block> RAW_MOSSAVENTURINE_BLOCK = registerBlock("raw_mossaventurine_block",
+            properties -> new Block(properties.strength(4f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final DeferredBlock<Block> MOSSAVENTURINE_BLOCK = registerBlock("mossaventurine_block",
+            properties -> new Block(properties.strength(4f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final DeferredBlock<Block> TOPAZ_BLOCK = registerBlock("topaz_block",
+            properties -> new Block(properties.strength(4f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final DeferredBlock<Block> RAW_TOPAZ_BLOCK = registerBlock("raw_topaz_block",
+            properties -> new Block(properties.strength(4f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
 
+    //Ore
     public static final DeferredBlock<Block> GARNET_ORE = registerBlock("garnet_ore",
             properties -> new DropExperienceBlock(UniformInt.of(2, 4), properties.strength(3f)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
     public static final DeferredBlock<Block> GARNET_DEEPSLATE_ORE= registerBlock("garnet_deepslate_ore",
+            properties -> new DropExperienceBlock(UniformInt.of(3, 5), properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> AQUAMARINE_DEEPSLATE_ORE= registerBlock("aquamarine_deepslate_ore",
+            properties -> new DropExperienceBlock(UniformInt.of(3, 5), properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> AQUAMARINE_ORE = registerBlock("aquamarine_ore",
+            properties -> new DropExperienceBlock(UniformInt.of(2, 4), properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> MOSSAVENTURINE_ORE = registerBlock("mossaventurine_ore",
+            properties -> new DropExperienceBlock(UniformInt.of(2, 4), properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> MOSSAVENTURINE_DEEPSLATE_ORE = registerBlock("mossaventurine_deepslate_ore",
+            properties -> new DropExperienceBlock(UniformInt.of(2, 4), properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> TOPAZ_ORE= registerBlock("topaz_ore",
+                properties -> new DropExperienceBlock(UniformInt.of(2, 4), properties.strength(3f)
+                        .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final  DeferredBlock<Block> TOPAZ_DEEPSLATE_ORE = registerBlock("topaz_deepslate_ore",
             properties -> new DropExperienceBlock(UniformInt.of(3, 5), properties.strength(3f)
                     .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 

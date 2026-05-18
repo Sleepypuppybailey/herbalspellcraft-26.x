@@ -2,11 +2,41 @@
   "item.herbalspellcraft.garnet": "Garnet",
   "item.herbalspellcraft.raw_garnet": "Raw Garnet",
 
+  "item.herbalspellcraft.raw_aquamarine": "Raw Aquamarine",
+  "item.herbalspellcraft.aquamarine": "Aquamarine",
+
+  "item.herbalspellcraft.mossaventurine": "MossAventurine",
+  "item.herbalspellcraft.raw_mossaventurine": "Raw MossAventurine",
+
+  "item.herbalspellcraft.topaz": "Topaz",
+  "item.herbalspellcraft.raw_topaz": "Raw Topaz",
+
+
 
   "block.herbalspellcraft.garnet_block": "Block of Garnet",
   "block.herbalspellcraft.raw_garnet_block": "Block of Raw Garnet",
   "block.herbalspellcraft.garnet_ore": "Garnet Ore",
   "block.herbalspellcraft.garnet_deepslate_ore": "Deepslate Garnet Ore",
+
+  "block.herbalspellcraft.aquamarine_deepslate_ore": "Deepslate Aquamarine Ore",
+  "block.herbalspellcraft.aquamarine_ore": "Aquamarine Ore",
+  "block.herbalspellcraft.aquamarine_block": "Block Of Aquamarine",
+  "block.herbalspellcraft.raw_aquamarine_block": "Block Of Raw Aquamarine",
+
+  "block.herbalspellcraft.mossaventurine_block": "Block Of MossAventurine",
+  "block.herbalspellcraft.raw_mossaventurine_block": "Block Of Raw MossAventurine",
+  "block.herbalspellcraft.mossaventurine_ore": "MossAventurine Ore",
+  "block.herbalspellcraft.mossaventurine_deepslate_ore": "Deepslate MossAventurine Ore",
+
+  "block.herbalspellcraft.topaz_block": "Block Of Topaz",
+  "block.herbalspellcraft.raw_topaz_block": "Block Of Raw Topaz",
+  "block.herbalspellcraft.topaz_ore": "Topaz Ore",
+  "block.herbalspellcraft.topaz_deepslate_ore": "Deepslate Topaz Ore",
+
+
+
+
+
 
 
   "creativetab.herbalspellcraft.herbalspellcraft_items": "HerbalSpellCraft"

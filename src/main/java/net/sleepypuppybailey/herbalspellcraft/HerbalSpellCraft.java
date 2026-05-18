@@ -50,9 +50,6 @@ public class HerbalSpellCraft {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.GARNET);
-            event.accept(ModItems.RAW_GARNET);
-
         }
     }
 
